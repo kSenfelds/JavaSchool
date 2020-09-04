@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class HelloUser {
+
+	public static void main(String[] args) {
+		/*
+		 * Uzrakstīt programmu klasē HelloUser, kas 1) Aicina lietoāju ievadīt kādu
+		 * vārdu un uzvārdu vienā rindā ar atstarpi 2) Sadala vārdu un uzvārdu divos
+		 * mainīgajos. 3) Vārdu pārveido tā lai tas sāktos ar lielo burtu un visi
+		 * pārējie būtu mazie burti 4) Uzvārdu pārveido lai tas viss sastāvētu no
+		 * lielajiem burtiem 5) Izvada uz ekrāna pārveidoto vārdu un uzvārdu, katru savā
+		 * rindiņā ievietotu single quote pēdiņās(')
+		 */ boolean t;
+		Scanner In = new Scanner(System.in);
+		String NameSurname = In.next();
+		do {
+			System.out.print("Enter your name and surname :");
+
+			
+			if (In.hasNextInt()) {
+				t = true;
+			} else {
+				t = false;
+			}
+		} while (t = false);
+		In.close();
+		String atstarpe = " ";
+	//	String name = NameSurname.substring(0, 5);
+		int sk  = NameSurname.indexOf(' ');
+		System.out.println( "Vārds ="  + " atstarpes nr. " +sk);
+	}
+
+}

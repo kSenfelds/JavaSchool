@@ -1,0 +1,22 @@
+
+public class Testmass {
+
+	public static void main(String[] args) {
+		int [] x = {5,4,3,2,1};
+		int nul ;
+		int one;
+		for (int i=1; i<x.length;i++) {
+			nul = x [i-1];
+			one = x [i];
+			if (one<nul) {
+				x [i] = nul;
+				x [i-1] = one;
+				}
+			}
+		for (int i = 0; i < x.length; i++) {
+			System.out.print(x[i]);
+		}
+			
+	}
+
+}

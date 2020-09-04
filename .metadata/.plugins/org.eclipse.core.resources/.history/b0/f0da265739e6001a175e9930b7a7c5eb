@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+public class DateValidator {
+
+	public static void main(String[] args) {
+		int datums = -1;
+		int mēnesis = -1;
+		Scanner in = new Scanner(System.in);
+		do {
+			System.out.print("Ievadi mēnesi (1-12) :");
+			mēnesis = in.nextInt();
+			System.out.print("Ievadi datumu (1-31) :");
+			datums = in.nextInt();
+		} while ((mēnesis > 0 && mēnesis < 13) && (datums > 0 && datums < 31));
+		in.close();
+		String[] mēneši = { "Jan", "Feb", "Mart", "Apr", "Mai", "Jūn", "Jūl", "Aug", "Sept", "Okt", "Nov", "Dec" };
+		switch (mēnesis) {
+		case (1):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (2):
+			if (datums < 30) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (3):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (4):
+			if (datums < 31) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (5):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (6):
+			if (datums < 31) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (7):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (8):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (9):
+			if (datums < 31) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (10):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (11):
+			if (datums < 31) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		case (12):
+			if (datums < 32) {
+				System.out.println(datums + ". " + mēneši[mēnesis]);
+			} else {
+				System.out.println("Kļūda!");
+			}
+			break;
+		}
+
+	}
+
+}

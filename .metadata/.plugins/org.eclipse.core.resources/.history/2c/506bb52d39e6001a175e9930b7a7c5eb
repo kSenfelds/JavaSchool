@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class DateValidator {
+
+	public static void main(String[] args) {
+		int datums = -1;
+		int mēnesis = -1;
+		Scanner in = new Scanner(System.in);
+		do { System.out.print("Ievadi mēnesi (1-12) :");
+			mēnesis = in.nextInt();
+			System.out.print("Ievadi datumu (1-31) :");
+			datums = in.nextInt();
+		}while ((mēnesis>0&&mēnesis<13)&&(datums>0&&datums<31));
+		String [] mēneši = {"Jan", "Feb", "Mart", "Apr", "Mai", "Jūn", "Jūl", "Aug", "Sept", "Okt", "Nov", "Dec"};
+		
+		System.out.println("Mēnesis :" + mēneši[mēnesis]);
+		System.out.println("Datums :" + datums);
+	      
+
+	}
+
+}

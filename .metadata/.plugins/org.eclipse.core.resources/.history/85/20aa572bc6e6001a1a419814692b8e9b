@@ -1,0 +1,14 @@
+
+public class Testmass {
+
+	public static void main(String[] args) {
+		int [] x = {5,4,3,2,1};
+		for (int i =1;i<x.length;i++) {
+			if (x[i]>x[i-1]) { for (i=1; i<x.length;i++) { x[i] = x[i-1]; x[i-1]=x[i];}
+				
+			}
+		}
+			
+	}
+
+}

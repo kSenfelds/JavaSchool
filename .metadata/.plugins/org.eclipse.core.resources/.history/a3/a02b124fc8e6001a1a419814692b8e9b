@@ -1,0 +1,19 @@
+
+public class Testmass {
+
+	public static void main(String[] args) {
+		int [] x = {5,4,3,2,1};
+		int nul ;
+		int one;
+		int sk=1;
+		do { if (x[sk-1]>x[sk]) {nul = x[sk-1];one = x[sk];}
+			sk++;
+			
+		}while (sk<x.length);
+		for (int i = 0; i < x.length; i++) {
+			System.out.print(x[i]);
+		}
+			
+	}
+
+}
