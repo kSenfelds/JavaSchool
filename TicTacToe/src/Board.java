@@ -100,6 +100,7 @@ public class Board {
 			else if (playerPositions.size()+cpuPositions.size()==9) {
 				return "TIE!";
 			}
+			break;
 		}
 		
 		
